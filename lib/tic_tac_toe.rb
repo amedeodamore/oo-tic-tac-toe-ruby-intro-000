@@ -95,4 +95,20 @@ def winner
   end
 end
 
+def play
+  while over? == !true
+    turn
+  end
+  if draw? == true
+    puts "Cat's Game!"
+  end
+  if winner == "X"
+    puts "Congratulations X!"
+
+  end
+  if winner == "O"
+    puts "Congratulations O!"
+  end
+end
+
 end
