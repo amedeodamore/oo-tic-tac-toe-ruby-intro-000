@@ -81,7 +81,7 @@ spot == "X" || spot == "O"
   end
 end
 
-def draw?(
+def draw?
   !won? && full?
 end
 
