@@ -49,4 +49,12 @@ end
 counter
 end
 
+def current_player
+  if turn_count.even? == true
+  return  "X"
+  else
+    return "O"
+  end
+end
+
 end
