@@ -75,4 +75,10 @@ WIN_COMBINATIONS.find do |position|
 end
 end
 
+def full?
+  @board.all? do |spot|
+spot == "X" || spot == "O"
+  end
+end
+
 end
