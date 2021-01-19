@@ -85,4 +85,14 @@ def draw?
   !won? && full?
 end
 
+def over?
+  won? || draw?
+end
+
+def winner
+  if winning_position = won?
+    @board[winning_position.first]
+  end
+end
+
 end
